@@ -19,8 +19,8 @@ class MainActivity : AppCompatActivity() {
         quantityEditText = findViewById(R.id.quantityEditText)
         okButton = findViewById(R.id.okButton)
 
-        val sizes = listOf("9x12", "10x15", "13x18", "15x21")
-        val prices = mapOf("9x12" to 10, "10x15" to 15, "13x18" to 20, "15x21" to 25)
+        val sizes = listOf("9x12", "10x15", "18x24")
+        val prices = mapOf("9x12" to 100, "10x15" to 150, "18x24" to 300)
 
         val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item, sizes)
         sizeSpinner.adapter = adapter
